@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device4-width, initial-scaled=1" name="viewport"/>
+        <title>Solicitud de prestamos</title>
+    </head>
+    <body>
+        <h1>Solicitud de prestamos</h1>
+        <form>
+            <form action="forms.html" method="GET">
+                <strong><label for="txtNombre">Nombre Completo:</label></strong>
+                <input id="txtNombre" type="text" placeholder="Nombre Completo"/>
+            <br/> <br/>
+
+            <strong><label for="txtCorreo">Dirección de correo electrónico:</label></strong>
+                <input id="txtCorreo" name="txtEmail" type="email" placeholder="tucorreo@electrónico.com"/>
+            <br/> <br/>
+
+            <strong><label for="txtTeléfono">Número de teléfono:</label></strong>
+                <input id="txtTeléfono" type="text" placeholder="Número de teléfono"/>
+            <br/> <br/>
+
+            <strong><label for="txtDirección">Dirección actual:</label></strong>
+                <input id="txtDirección" type="text" placeholder="Dirección actual"/>
+            <br/> <br/>
+
+            <strong><label for="txtCiudad">Ciudad:</label></strong>
+                <input id="txtCiudad" type="text" placeholder="Ciudad"/>
+            <br/> <br/>
+
+            <strong><label for="cmbEstado">Estado:</label></strong>
+            <select id="cmbEstado" name="cmbEstado">
+                <option value="Atlántida">Atlántida</option>
+                <option value="Choluteca">Choluteca</option>
+                <option value="Colón">Colón</option>
+                <option value="Comayagua">Comayagua</option>
+                <option value="Copán">Copán</option>
+                <option value="Cortés">Cortés</option>
+                <option value="ElParaíso">El Paraíso</option>
+                <option value="FranciscoM">Francisco Morazán</option>
+                <option value="GraciasD">Gracias a Dios</option>
+                <option value="Intibucá">Intibucá</option>
+                <option value="LaPaz">La Paz</option>
+                <option value="Lempira">Lempira</option>
+                <option value="Ocotepeque">Ocotepeque</option>
+                <option value="Olancho">Olancho</option>
+                <option value="SantaB">Santa Bárbara</option>
+                <option value="Valle">Valle</option>
+                <option value="Yoro">Yoro</option>
+            </select> <br/> <br/>
+
+            <strong><label for="txtCódigoP">Código Postal:</label></strong>
+            <input id="txtCódigoP" type="text" placeholder="Código Postal"/>
+        <br/> <br/>
+
+        <strong><label>Nivel de educación actual:</label> <br/></strong>
+            <label for="optPrepa">Preparactoria</label>
+            <input type="radio" id="optPrepa" name="optNivelE" value="Preparactoria" /> <br/>
+            <label for="optLicen">Licenciatura</label>
+            <input type="radio" id="optLicen" name="optNivelE" value="Licenciatura" /> <br/>
+            <label for="optMaest">Maestría</label>
+            <input type="radio" id="optMaest" name="optNivelE" value="Maestría" /> <br/>
+            <label for="optDoct">Doctorado</label>
+            <input type="radio" id="optDoct" name="optNivelE" value="Doctorado" /> 
+            <br/> <br/>
+
+            <strong><label>Programa de estudio:</label> <br/></strong>
+            <label for="optICC">Ciencias de la Computación</label>
+            <input type="radio" id="optICC" name="optProgE" value="Ciencias de la Computación" /> <br/>
+            <label for="optIng">Ingeniería</label>
+            <input type="radio" id="optIng" name="optProgE" value="Ingeniería" /> <br/>
+            <label for="optEcon">Economía</label>
+            <input type="radio" id="optEcon" name="optProgE" value="Economía" /> <br/>
+            <label for="optArtes">Artes</label>
+            <input type="radio" id="optArtes" name="optProgE" value="Artes" /> <br/>
+            <label for="optOtro">Otro</label>
+            <input type="radio" id="optOtro" name="optProgE" value="Otro" />
+        <br/> <br/>
+
+        <strong><label for="txtMontoP">Monto del préstamo solicitado:</label></strong>
+        <input id="txtMontoP" type="text" placeholder="Monto del préstamo solicitado"/>
+        <br/> <br/>
+    
+        <strong><label for="txtRazón">Razón para solicitar el préstamo:</label><br/></strong>
+        <textarea id="txtRazón" name="txtRazón" placeholder="Razón para solicitar el préstamo"
+        ></textarea> <br/> <br/>
+
+        <button type="submit" name="btnEnviar">Enviar</button>
+        </form>
+    </body>
+</html>

@@ -1,54 +1,49 @@
 body {
     background-color: white;
+    color: black;
+    margin:0px;
+    padding:0px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-header h1{
-    margin: 0.5rem;
-}
-
-header nav ul{
-    display: flex;
-    list-style: none;
+header h1 {
     margin: 0px;
-    margin-right: 1rem;
+    margin-left:1rem;
+    font-size: 1.5rem;
 }
 
-header nav ul li{
-    margin: 1rem;
+header nav ul {
+    display:flex;
+    list-style: none;
+    margin:0px;
+    margin-right: 1rem;
+
 }
 
 header nav ul li a{
     display: block;
-    padding: 0.75rem, 1rem;
-    text-decoration: underline;
-    background-color: pink;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
     color: black;
-    transition: background-color 1s;
+    transition: background-color 1s ease;
 }
 
 header nav ul li a:hover{
-    background-color: papayawhip;
-    color: papayawhip;
-
+    background-color: pink;
+    color:white
 }
 
-main{
-    background-color: pink;
+main {
+    background-color: rgb(228, 182, 190);
     color: black;
-    padding: 1rem;
+    padding:1rem;
 }
 
-main h2{
-    margin: 0.2px;
-}
-
-a {
-    color:black;
-    background-color: pink;
-    line-height: 1.5;
+main h2 {
+    margin:0.2px;
 }

@@ -39,7 +39,7 @@ header nav ul li a:hover{
 }
 
 main {
-    background-color: rgb(228, 182, 190);
+    background-color: rgb(238, 127, 145);
     color: black;
     padding:1rem;
 }
@@ -49,5 +49,7 @@ main h2 {
 }
 
 .hero-panel{
-    
+    display: block;
+    background-color: pink;
+    padding: 2rem 3rem 1rem 1.5rem;
 }

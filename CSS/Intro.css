@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
 body {
+    font-family: 'Montserrat', Arial, sans-serif;
     background-color: #000;
     color:#fff;
     margin:0px;
@@ -200,3 +203,270 @@ main h2 {
         background-color: #651900;
     }
 }
+
+.full-progress {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw; 
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nucleo1 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(170, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 11;
+    transform: translate(8px, -3px);
+    animation: movimiento5 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.nucleo2 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(170, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-1px, 8px);
+    animation: movimiento5 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.nucleo3 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(39, 0, 147);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-1px, -8px);
+    animation: movimiento6 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.nucleo4 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(39, 0, 147);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translate(8px, 3px);
+    animation: movimiento6 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.nucleo5 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(170, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-8px, -3px);
+    animation: movimiento5 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.nucleo6 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(39, 0, 147);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-8px, 3px);
+    animation: movimiento6 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.nucleo7 {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(58, 4, 208);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 12;
+    transform: translate(0px, 0px);
+    animation: movimiento6 2.5s linear infinite;
+    box-shadow: 1px 1px 3px #000;
+}
+
+
+.orbita1{
+    width: 80px;
+    height: 250px;
+    border: solid 8px rgb(120, 120, 120);
+    border-radius: 50%;
+    transform: rotate(60deg);
+    display: flex;
+    animation: movimiento4 2.5s linear infinite;
+}
+
+.orbita2{
+    width: 70px;
+    height: 240px;
+    border: solid 8px rgb(120, 120, 120);
+    border-radius: 50%;
+    transform: rotate(0deg);
+    display: flex;
+    position: absolute;
+    animation: movimiento4 2.5s linear infinite;
+}
+
+.orbita3{
+    width: 70px;
+    height: 240px;
+    border: solid 8px rgb(120, 120, 120);
+    border-radius: 50%;
+    transform: rotate(300deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    animation: movimiento4 2.5s linear infinite;
+    
+}
+
+.electron1 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(10, 238, 188);
+    border-radius: 50%;
+    animation: movimiento1 2.5s linear infinite;
+    position: absolute;
+    z-index: 200;
+}
+
+.electron2 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(10, 238, 188);
+    border-radius: 50%;
+    animation: movimiento2 2.5s linear infinite;    
+    position: absolute;
+    transform: translate(0px, 70px); 
+    z-index: 200;
+}
+
+.electron3 {
+    width: 30px;
+    height: 30px;    
+    border-color: #000;
+    background-color: rgb(10, 238, 188);    
+    border-radius: 50%;
+    animation: movimiento3 2.5s linear infinite;
+    position: absolute;
+    transform: translate(-100px, -55px);  
+    z-index: 200;
+}
+
+
+@keyframes movimiento1 {
+    0%{ 
+        transform: translate(0, 130px); 
+    }
+    25% { 
+        transform: translate(30px, 0); 
+    }
+    50% { 
+        transform: translate(0, -130px); 
+    }
+    75% { 
+        transform: translate(-30px, 0); 
+    }
+    100% { 
+        transform: translate(0, 130px); 
+    }
+}
+
+
+@keyframes movimiento2 {
+    0% { 
+        transform: translate(135px, 30px); 
+    }
+    25% { 
+        transform: translate(-5px, 55px); 
+    }
+    50% { 
+        transform: translate(-95px, 170px); 
+    }
+    75% { 
+        transform: translate(30px, 130px); 
+    }
+    100% { 
+        transform: translate(135px, 30px); 
+    }
+}
+
+@keyframes movimiento3 {
+    0% { 
+        transform: translate(-100px, -55px); 
+    }
+    25% { 
+        transform: translate(0px, -35px); 
+    }
+    50% { 
+        transform: translate(100px, 55px); 
+    }
+    75% { 
+        transform: translate(0px, 35px); 
+    }
+    100% { 
+        transform: translate(-100px, -55px); 
+    }
+}
+
+@keyframes movimiento4 {
+    0% { 
+        border: solid 8px rgb(120, 120, 120);
+        border-bottom: #000;
+        border-top: #000;
+    }
+    50% {        
+        border: solid 8px rgb(224, 224, 224);
+        border-bottom: #000;
+        border-top: #000;
+    }
+    100% { 
+        border: solid 8px rgb(120, 120, 120);
+        border-bottom: #000;
+        border-top: #000;        
+    }
+}
+
+@keyframes movimiento5 {
+    0% { 
+        border: solid 8px rgb(255, 2, 2);        
+    }
+    50% { 
+        border: solid 8px rgb(157, 1, 1);
+    }
+    100% { 
+        border: solid 8px rgb(255, 2, 2);
+    }
+}
+
+@keyframes movimiento6 {
+    0% { 
+        border: solid 8px rgb(3, 24, 211);        
+    }
+    50% { 
+        border: solid 8px rgb(34, 0, 157);
+    }
+    100% { 
+        border: solid 8px rgb(3, 24, 211);
+    }
+}
+
+
+

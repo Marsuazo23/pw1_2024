@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #000;
+    color:#fff;
+    margin:0px;
+    padding:0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0px;
+    margin-left:1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+
+}
+
+header nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #ddd;
+    transition: background-color 1s ease;
+    border-bottom: 1px solid #bbb;
+}
+
+header nav ul li a:hover{
+    background-color: #eee;
+    color:#333
+}
+
+main {
+    background-color: #ddd;
+    color:#333;
+    padding:0;
+}
+
+main h2 {
+    margin:0.2px;
+}
+
+.hero-panel {
+    position:relative;
+    overflow: hidden;
+    background-color:#21890c;
+    height: 80vh;
+}
+
+.hero-panel img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-panel div {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 17px;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hero-panel div a{
+    align-self: center;
+    display:inline-block;
+    padding:1rem 2rem;
+    border: 1px solid #134e07;
+    background-color: #21890c;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    box-shadow: 3px 3px 5px #000;
+    border-radius: 48px;
+}
+.hero-panel div.cuadrante4{
+    top:75%;
+    left:75%;
+}
+.hero-panel div.cuadrante2{
+    top:25%;
+    left:75%;
+}
+
+.Precios{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.card{
+    border: 1px solid black;
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 13px;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    object-position: center center;
+    background-color: white;
+}
+
+.card h3, .card p{
+    margin: 0px;
+    padding: 0.5rem;
+}
+
+.card p{
+    font-size: 0.8rem;
+}
+
+.card a{
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    background-color: aqua;
+}
+
+.card .precio{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top: 200px;
+    right: 1rem;
+    background-color: palevioletred;
+    transform: translateY(-50%);
+    font-weight: bold;
+}

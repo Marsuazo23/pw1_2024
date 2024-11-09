@@ -8,9 +8,6 @@
     </head>
     <body>
         <header>
-            <div class="menu-icon" onclick="document.body.classList.toggle('menu-open')">
-            &#9776; 
-            </div>
             <img src="http://picsum.photos/48" alt="Logo - Delicious Bakery">
             <h1>Bakery</h1>
             <nav>
@@ -21,100 +18,93 @@
                     <li><a href="#Contact">Contact Us</a></li>
                 </ul>
             </nav>
-        </header>          
+        </header>    
         <main>
             <section class="hero-panel">
                 <picture>
                     <img src="https://picsum.photos/400/400" alt="Imagen de prueba">
                 </picture>
                 <h1 class="hero-title">Delicious Bakery</h1>
-                <div class="cuadrante2">
+                <div>
                     <a href="#">Order Now</a>
                 </div>
             </section>
+            <section class="form-panel">
+                <form>
+                    <h1>Our Location</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veniam facere aut exercitationem officiis eum iste assumenda doloribus laudantium dignissimos. Dolore accusantium iure laborum sint vitae ipsum perspiciatis quas exercitationem.
+                    </p>
+                    <div>
+                        <a href="#">Get Directions</a>
+                    </div>
+                </br>
+                </br>
+                </br>
+                    <form action="forms.html" method="GET">
+                    <strong><label for="txtName">Name:</label></strong>
+                    <br/>
+                    <input id="txtName" type="text" placeholder="Name"/>
+                    <br/> <br/>
+        
+                    <strong><label for="txtEmail">Email:</label></strong>
+                    <br/>
+                    <input id="txtEmail" name="txtEmail" type="email" placeholder="Email"/>
+                    <br/> <br/>
+    
+                    <strong><label for="txtMessage">Message</label></strong>
+                    <br/>
+                    <textarea id="txtMessage" name="txtMessage" placeholder="Message"
+                    ></textarea> <br/> <br/>
+    
+                    <button type="Send" name="btnSend">Send</button></form></br></br>
+                </form>
+                    <img src="http://picsum.photos/48" alt="Logo - Delicious Bakery">
+                </section>
 
-            <section id="Products" class="Products">
+            <section id="Testimonials" class="Testimonials">
                 <div class="cards">
                     <div class="card">
-                        <img src="https://picsum.photos/300/220" alt="Bakery Prod 1">
-                        <h3>Bakery Prod 1</h3>
-                        <div class="precio">$10</div>
+                        <img src="https://picsum.photos/300/220" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi neque dolor, repellendus voluptatum quam consequuntur optio velit possimus eius quo libero porro aspernatur inventore error a. Est, soluta esse.
+                        </p>
                     </div>
                 </br>
                     <div class="card">
-                        <img src="https://picsum.photos/300/220" alt="Bakery Prod 2">
-                        <h3>Bakery Prod 2</h3>
-                        <div class="precio">$10</div>
+                        <img src="https://picsum.photos/300/220" alt="Jane Doe">
+                        <h3>Jane Doe</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi neque dolor, repellendus voluptatum quam consequuntur optio velit possimus eius quo libero porro aspernatur inventore error a. Est, soluta esse.
+                        </p>
                     </div>
                 </br>
                     <div class="card">
-                        <img src="https://picsum.photos/300/220" alt="Bakery Prod 3">
-                        <h3>Bakery Prod 3</h3>
-                        <div class="precio">$10</div>
-                    </div>
-                </br>
-                    <div class="card">
-                        <img src="https://picsum.photos/300/220" alt="Bakery Prod 4">
-                        <h3>Bakery Prod 4</h3>
-                        <div class="precio">$10</div>
-                    </div>
-                </br>
-                    <div class="card">
-                        <img src="https://picsum.photos/300/220" alt="Bakery Prod 5">
-                        <h3>Bakery Prod 5</h3>
-                        <div class="precio">$10</div>
-                    </div>
+                        <img src="https://picsum.photos/300/220" alt="Junior Doe">
+                        <h3>Junior Doe</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi neque dolor, repellendus voluptatum quam consequuntur optio velit possimus eius quo libero porro aspernatur inventore error a. Est, soluta esse.
+                        </p>                   
                 </br>
                 </div>
             </section>
-
-            <section class="form-panel">
-            <form>
-                <h1>Ask for a Quote</h1>
-                <form action="forms.html" method="GET">
-                <strong><label for="txtName">Name:</label></strong>
-                <br/>
-                <input id="txtName" type="text" placeholder="Name"/>
-                <br/> <br/>
-    
-                <strong><label for="txtEmail">Email:</label></strong>
-                <br/>
-                <input id="txtEmail" name="txtEmail" type="email" placeholder="Email"/>
-                <br/> <br/>
-    
-                <strong><label for="cmbBakS">Bakery Selection:</label></strong>
-                <br/>
-                <select id="cmbBakS" name="cmbBakS">
-                <option value="Atlántida">1</option>
-                <option value="Choluteca">2</option>
-                </select> <br/> <br/>
-
-                <strong><label for="txtMessage">Message</label></strong>
-                <br/>
-                <textarea id="txtMessage" name="txtMessage" placeholder="Message"
-                ></textarea> <br/> <br/>
-
-                <button type="Send" name="btnSend">Send</button></form></br></br>
-                </form>
-
-                <img src="http://picsum.photos/48" alt="Logo - Delicious Bakery">
-
-            </section>
         </main>
         <footer>
-            <div id="Contact" class="left">
+            <div id="Contact" class="Opciones">
                 <p>Home</p>
                 <p>Products</p>
                 <p>About Us</p>
                 <p>Contact Us</p>
             </div>
-            <div class="center">
+            <div class="Derechos">
                 <p>&copy; 2020 Bakery</p>
             </div>
-            <div class="right">
+            <div class="Contacto">
                 <p>+1 234 567 890</p>
                 <p>+1 234 567 890</p>
             </div>
-        </footer>        
+        </footer> 
+               
     </body>
 </html>

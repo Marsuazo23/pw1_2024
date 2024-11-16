@@ -101,6 +101,28 @@ document.addEventListener("DOMContentLoaded", function () {
    }
 
    //Estructuras de ciclos o iteraciones
+   for (let i=0; i < 10; i++){
+    console.log("Iteracion for; ", i);
+   }
 
-   
+   let intWhile = 10;
+   while(intWhile >= 0){
+    console.log("Iteracion while: ", intWhile);
+    intWhile --;
+   }
+   let intDoWhile = 10;
+   do {
+    console.log("Iteraccion DO While: ", intDoWhile);
+    intDoWhile++;
+   }while (intDoWhile > 10)
+
+    const arrColores = ("red", "blue", "green", 0x1234ab, 255);
+
+    arrColores.forEach(
+        (color) => {
+            console.log("Color Iterando: ", color);
+        }
+    );
+
+    const miSlider = new SliderController();
 });

@@ -33,4 +33,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
    let strDoubleQuotes = "Esto es \"UNA CITA Bibliografica\" se debe usar \\ para escapar el simbolo ";
    let strSingleQuotes = 'Esto es "UNA CITA Bibliografica" no se debe usar \ para escapar el simbolo';
+
+   const objPersona = {
+    "nombre" : "Marcela",
+    "apellido" : "Suazo",
+    "edad": 19,
+    "correo" : "marcesuazo@gmail.com"
+   }; //JSON OBJETC NOTATION JSON
+
+   objPersona.edad = 20;
+
+   const demoEdad = 10;
+   //demoEdad = 20;
+
+   
+   const arrPersonas = [];
+
+   arrPersonas.push(objPersona);
+
+   //arrPersonas = []; 
+
+   //Estructuras de control -- IF, Switch, Try catch
+   let a = 10;
+   let b = "10";
+   if (a == b) {
+    console.log("Si entro a A == B");
+   }
+   if (a === b) {
+    console.log("Si entro a A == B");
+   }
+   else{
+    console.log("No entro a A == B");
+   }
+
+   //Negaciones
+   if (a != b) {
+    console.log("Si entro a A != B");
+   }
+   else{
+    console.log("No entro a A != B");
+   }
+
+   if (a !== b) {
+    console.log("Si entro a A !== B");
+   }
+   else{
+    console.log("No entro a A !== B");
+   }
+
+   const strGreaterThan10 = ( a > 10) ? "A es mayor a 10": "A es menor o igual a 10";
+   console.log("Ternaria:", strGreaterThan10)
+
+   let strValueSelected = 'ACT'; //ACT - INA - SPN - RTR - CNT
+   switch(strValueSelected){
+    case "ACT":
+        console.log("Selecte");
+    break;
+    case "INA":
+        //Expresiones
+    break;
+    case "SPN":
+        //Expresiones
+    break;
+    default:
+        console.log("ERROR", "No hay handlera para expresion");
+        break;
+   }
 });

@@ -1,0 +1,38 @@
+.slider{
+    width: 100vw;
+    
+}
+
+.slider .framestrack{
+    display: flex;
+    flex: row;
+    transition: left 0.5s ease-in-out;
+}
+
+.slide .framestrack .slide{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+}
+
+.slider .framestrack .slide img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80vw;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slider .framestrack .slide .action{
+    position: absolute;
+    max-width: 380px;
+    padding: 2rem;
+    background-color: wheat;
+    border-radius: 17px;
+    box-shadow: 3px 3px 5px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -99,4 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("ERROR", "No hay handlera para expresion");
         break;
    }
+
+   //Estructuras de ciclos o iteraciones
+
+   
 });

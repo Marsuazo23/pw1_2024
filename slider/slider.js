@@ -26,8 +26,10 @@ class SliderController {
         this.timeIntervalId = setTimeout{
             ()=>{
                 if(this.currenSlideIndex + this.slideDirection >= this.slides.length || 
-                    this.currenSlideIndex + history.slideDirection
-                ) 
+                    this.currenSlideIndex + this.slideDirection > 0 ){
+                        
+                }
+                this.moveSlideTo(this.currenSlideIndex)
             }, this.timeInterval
         };
     }

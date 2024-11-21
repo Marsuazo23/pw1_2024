@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Arial, sans-serif;
+    background-color: #E0D5BE;
+    color: black;
+    margin:0px;
+    padding:0px;
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #88A795;
+}
+
+header h1 {
+    margin: 0px;
+    margin-left:1rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+header nav ul {
+    display:flex;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+}
+
+header nav ul li.logo img {
+    width: 85px; 
+    margin-right: 1rem; 
+    height: auto;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center; 
+}
+
+header nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s ease;
+}
+
+header nav ul li a:hover{
+    background-color: #dab1d4;
+    color:#333
+}
+
+.panel-inicio picture {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+
+.panel-inicio img {
+    padding: 2rem;
+    max-width: 100%; 
+    height: auto; 
+    width: 100%;
+    max-height: 600px;
+    opacity: 0.7;
+}
+
+.panel-fondo {
+    top: 50%; 
+    left: 50%;
+    transform: translateX(122%) translateY(-30%);
+    width: 400px; 
+    height: 300px; 
+    background-color: rgba(136, 167, 149, 0.5); 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -320px;
+}
+
+.cuadrante2 {
+    position: relative; 
+    background-color: #e0d5be;
+    padding: 1rem;
+    z-index: 2; 
+    text-align: center;
+    transform: translateX(0%) translateY(270%); 
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrante2 h2 {
+    font-weight: normal; 
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0%) translateY(-105%); 
+    font-size: 1.2rem; 
+}
+
+.panel-texto {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-45%) translateY(110%); 
+    font-size: 3rem; 
+    color: black; 
+    text-align: center; 
+}
+
+.panel-texto2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-45%) translateY(480%); 
+    font-size: 1.5rem; 
+    color: black; 
+    text-align: center; 
+}
+
+.panel-floreseternas {
+
+    padding-left: 12rem; 
+}
+
+.panel-floreseternas h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.panel-floreseternas p {
+    width: 50%; 
+    margin-bottom: 1.5rem;
+    line-height: 2.5;
+}
+
+.panel-floreterna picture img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 40px;
+    transform: translateX(270%) translateY(210%) rotate(10deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.panel-regalop {
+    font-size: 1.5rem; 
+    text-align: center; 
+    transform: translateX(176%) translateY(-380%); 
+    width: 35%;
+    height: 35%;
+}
+
+.cuadrante3 {
+    position: relative; 
+    background-color: #e0d5be;
+    text-align: center;
+    transform: translateX(660%) translateY(-500%); 
+    height: 40px; 
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    white-space: nowrap; 
+    display: inline-flex;
+    font-size: 0.6rem;
+}
+
+.cuadrante3 h2{
+    font-weight: normal; 
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #88A795;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    flex: 1; 
+}
+
+.panel-logosredes {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+    margin-left: 3rem;
+}
+
+.panel-logosredes img {
+    width: 8rem;
+    margin: 0 0.5rem;
+}
+
+footer nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-end; 
+    margin-right: 8rem;
+}
+
+footer nav ul li {
+    margin: 0.5rem 0; 
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.panel-texto3 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-42%) translateY(-250%); 
+    font-size: 3rem; 
+    color: black; 
+    text-align: center; 
+}
+
+
+
+
+
+
+
+
+

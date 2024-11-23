@@ -193,7 +193,7 @@ footer {
     align-items: center;
     justify-content: space-between; 
     background-color: #88A795;
-    padding: 2rem;
+    padding: 2px;
 }
 
 footer p {
@@ -600,6 +600,125 @@ footer nav ul li a:hover {
     transform: translateY(720px); 
 }
 
+footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #88A795;
+    padding: 3.5px;
+    margin-top: 53rem;
+}
 
+footer2 p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    flex: 1; 
+}
 
+.panel-logosredes2 {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+    margin-left: 3rem;
+}
 
+.panel-logosredes2 img {
+    width: 4rem;
+    margin: 37px;
+}
+
+footer2 nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+footer2 nav ul {
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-end; 
+    margin-right: 8rem;
+}
+
+footer2 nav ul li {
+    margin: 0.5rem 0; 
+}
+
+footer2 nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer2 nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #88A795;
+}
+
+header3 h1 {
+    margin: 0px;
+    margin-left:1rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-right: 3rem;
+}
+
+header3 nav ul {
+    display:flex;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+}
+
+header3 nav ul li.logo img {
+    width: 85px; 
+    margin-right: 1rem; 
+    height: auto;
+}
+
+header3 nav ul li {
+    display: flex;
+    align-items: center; 
+}
+
+header3 nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s ease;
+}
+
+header3 nav ul li a:hover{
+    background-color: #dab1d4;
+    color:#333
+}
+
+.panel-texto7 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-49%) translateY(-130%); 
+    font-size: 2rem; 
+    color: black; 
+    text-align: center; 
+    width: 50rem;
+}
+
+.panel-texto7 h2{
+    font-weight: normal;
+}

@@ -722,3 +722,274 @@ header3 nav ul li a:hover{
 .panel-texto7 h2{
     font-weight: normal;
 }
+
+.panel-texto8 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(-40%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    width: 50rem;
+    line-height: 2.5;
+}
+
+.panel-tipoC {
+    display: flex; 
+    gap: 4rem; 
+}
+
+.panel-tiposdeC {
+    display: flex; 
+    gap: 5rem; 
+}
+
+.card5 {
+    border: 1px solid black;
+    position: relative;
+    width: 310px;
+    overflow: hidden;
+    background-color: #ceb5d9;
+    border-radius: 13px;
+    transform: translateX(45%) translateY(90%); 
+}
+
+.card5 img {
+    width: 100%;
+    height: 300px;
+    object-position: center center;
+    background-color: #ceb5d9;
+}
+
+.card5 h3, .card5 p {
+    margin: 0px;
+    padding: 0.5rem;
+}
+
+.card5 p {
+    font-size: 1rem;
+}
+
+.card5 a {
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b58dc6;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.panel-texto9 h3 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-350%) translateY(790%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.panel-texto9 p {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-175%) translateY(850%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.panel-texto10 h3 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-45%) translateY(787%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.panel-texto10 p {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-45%) translateY(848%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.panel-texto11 h3 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(210%) translateY(785%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.panel-texto11 p {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(85%) translateY(850%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.panel-texto12 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-85%) translateY(380%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2.5;
+    font-weight: normal;
+}
+
+.panel-texto13 p {
+    position: absolute; 
+    display: inline-block;
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-85%) translateY(375%); 
+    font-size: 1.3rem; 
+    color: black; 
+    text-align: center; 
+    line-height: 2.5;
+    text-align: center;
+}
+
+.card6 {
+    position: absolute;
+    top: 50%; 
+    right: 0; 
+    transform: translateX(-28%) translateY(230%);
+    border: 1px solid black;
+    width: 300px;
+}
+
+.card6 img {
+    width: 100%; 
+    height: 300px; 
+    object-position: center center;
+    background-color: #ceb5d9;
+}
+
+.panel-texto14 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-92%) translateY(670%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2.5;
+    font-weight: normal;
+}
+
+.panel-texto15 p {
+    position: absolute; 
+    display: inline-block;
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-85.5%) translateY(300%); 
+    font-size: 1.3rem; 
+    color: black; 
+    line-height: 2.5;
+}
+
+.card7 {
+    position: absolute;
+    top: 50%; 
+    right: 0; 
+    transform: translateX(-28%) translateY(380%);
+    border: 1px solid black;
+    width: 300px;
+}
+
+.card7 img {
+    width: 100%; 
+    height: 300px; 
+    object-position: center center;
+    background-color: #ceb5d9;
+}
+
+.panel-texto16 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(220%) translateY(1230%); 
+    font-size: 3rem; 
+    color: #d0a933; 
+    line-height: 2.5;
+    font-weight: bold;
+}
+
+.panel-texto17 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-6%) translateY(1080%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2.5;
+    font-weight: normal;
+    text-align: right; 
+}
+
+.panel-texto18 p {
+    position: absolute; 
+    display: inline-block;
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-13.5%) translateY(655%); 
+    font-size: 1.3rem; 
+    color: black; 
+    line-height: 2.5;
+    text-align: right; 
+}
+
+.card8 {
+    position: absolute;
+    top: 50%; 
+    right: 0; 
+    transform: translateX(-300%) translateY(600%);
+    border: 1px solid black;
+    width: 300px;
+}
+
+.card8 img {
+    width: 100%; 
+    height: 300px; 
+    object-position: center center;
+    background-color: #ceb5d9;
+}
+
+.panel-texto19 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-280%) translateY(1790%); 
+    font-size: 3rem; 
+    color: #d0a933; 
+    line-height: 2.5;
+    font-weight: bold;
+}

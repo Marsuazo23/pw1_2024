@@ -1396,3 +1396,52 @@ header5 nav ul li a:hover{
     width: 50rem;
     line-height: 2.5;
 }
+
+.panel-texto31 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-45%) translateY(1345%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2;
+    font-weight: normal;
+    text-align: center;
+}
+.panel-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-45%) translateY(350%); 
+    font-size: 2rem;
+    color: black;
+    line-height: 1;
+    font-weight: normal;
+    text-align: center;
+    width: 80%; 
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px; 
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #c1deae;
+}

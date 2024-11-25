@@ -1408,17 +1408,35 @@ header5 nav ul li a:hover{
     font-weight: normal;
     text-align: center;
 }
-.panel-form{
+.btn-enviar {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid black;
+}
+
+.btn-enviar:hover {
+    background-color: #45a049; 
+}
+
+.panel-form {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-45%) translateY(350%); 
+    transform: translateX(-45%) translateY(175%);
     font-size: 2rem;
     color: black;
     line-height: 1;
     font-weight: normal;
-    text-align: center;
-    width: 80%; 
+    text-align: left;
+    width: 50%; 
 }
 
 .form-row {
@@ -1429,6 +1447,7 @@ header5 nav ul li a:hover{
 
 .form-group {
     flex: 1;
+    margin-bottom: 2rem;
 }
 
 label {
@@ -1436,12 +1455,75 @@ label {
     margin-bottom: 0.5rem;
 }
 
-input {
+input, textarea {
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 10px; 
-    border: 1px solid black;
+    border: 2px solid black;
     box-sizing: border-box;
     background-color: #c1deae;
+}
+
+textarea {
+    resize: none; 
+    height: 4rem; 
+}
+
+footer5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #88A795;
+    padding: 3.5px;
+    margin-top: 120rem;
+}
+
+footer5 p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    flex: 1; 
+}
+
+.panel-logosredes5 {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+    margin-left: 3rem;
+}
+
+.panel-logosredes5 img {
+    width: 4rem;
+    margin: 37px;
+}
+
+footer5 nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+footer5 nav ul {
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-end; 
+    margin-right: 8rem;
+}
+
+footer5 nav ul li {
+    margin: 0.5rem 0; 
+}
+
+footer5 nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer5 nav ul li a:hover {
+    text-decoration: underline;
 }

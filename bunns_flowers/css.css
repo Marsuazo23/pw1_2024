@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -1271,4 +1275,124 @@ footer4 nav ul li a {
 
 footer4 nav ul li a:hover {
     text-decoration: underline;
+}
+
+header5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #88A795;
+}
+
+header5 h1 {
+    margin: 0px;
+    margin-left:1rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-right: 3rem;
+    transform: translateX(8.7px);
+}
+
+header5 nav ul {
+    display:flex;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+}
+
+header5 nav ul li.logo img {
+    width: 85px; 
+    margin-right: 1rem; 
+    height: auto;
+}
+
+header5 nav ul li {
+    display: flex;
+    align-items: center; 
+}
+
+header5 nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s ease;
+}
+
+header5 nav ul li a:hover{
+    background-color: #dab1d4;
+    color:#333
+}
+
+.panel-texto25 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-48%) translateY(-320%); 
+    font-size: 3rem; 
+    color: black; 
+    text-align: center; 
+    width: 50rem;
+    font-weight: normal;
+}
+
+.panel-texto26 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(-40%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    width: 50rem;
+    line-height: 2.5;
+}
+
+.panel-texto27 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-330%) translateY(190%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2.5;
+    font-weight: normal;
+}
+
+.panel-texto28 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-324%) translateY(270%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2.5;
+    font-weight: normal;
+}
+
+.panel-texto29 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-155%) translateY(450%); 
+    font-size: 2rem; 
+    color: black; 
+    line-height: 2;
+    font-weight: normal;
+}
+
+.panel-texto30 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-48%) translateY(145%); 
+    font-size: 1.4rem; 
+    color: black; 
+    text-align: center; 
+    width: 50rem;
+    line-height: 2.5;
 }

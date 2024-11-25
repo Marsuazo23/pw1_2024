@@ -1125,3 +1125,150 @@ footer3 nav ul li a {
 footer3 nav ul li a:hover {
     text-decoration: underline;
 }
+
+header4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #88A795;
+}
+
+header4 h1 {
+    margin: 0px;
+    margin-left:1rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-right: 3rem;
+    transform: translateX(8.7px);
+}
+
+header4 nav ul {
+    display:flex;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+}
+
+header4 nav ul li.logo img {
+    width: 85px; 
+    margin-right: 1rem; 
+    height: auto;
+}
+
+header4 nav ul li {
+    display: flex;
+    align-items: center; 
+}
+
+header4 nav ul li a{
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s ease;
+}
+
+header4 nav ul li a:hover{
+    background-color: #dab1d4;
+    color:#333
+}
+
+.panel-texto23 h2 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-48%) translateY(-320%); 
+    font-size: 3rem; 
+    color: black; 
+    text-align: center; 
+    width: 50rem;
+    font-weight: normal;
+}
+
+.panel-texto24 p {
+    position: absolute; 
+    display: inline-block;
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-15%) translateY(25%); 
+    font-size: 1.3rem; 
+    color: black; 
+    line-height: 2.5;
+}
+
+.card10 {
+    position: absolute;
+    top: 50%; 
+    right: 0; 
+    transform: translateX(-300%) translateY(-10%);
+    width: 300px;
+}
+
+.card10 img {
+    width: 100%; 
+    height: 300px; 
+    object-position: center center;
+    background-color: #ceb5d9;
+}
+
+footer4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #88A795;
+    padding: 3.5px;
+    margin-top: 35rem;
+}
+
+footer4 p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    flex: 1; 
+}
+
+.panel-logosredes4 {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+    margin-left: 3rem;
+}
+
+.panel-logosredes4 img {
+    width: 4rem;
+    margin: 37px;
+}
+
+footer4 nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+footer4 nav ul {
+    display: flex;
+    flex-direction: column; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-end; 
+    margin-right: 8rem;
+}
+
+footer4 nav ul li {
+    margin: 0.5rem 0; 
+}
+
+footer4 nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer4 nav ul li a:hover {
+    text-decoration: underline;
+}

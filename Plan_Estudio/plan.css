@@ -10,15 +10,6 @@ header{
     border-radius: 1rem;
 }
 
-.panel-texto1
-{
-    text-align: center;
-    background-color: darkblue;
-    color: white;
-    font-weight: normal;
-    border-radius: 1rem;
-}
-
 .plan {
     display: flex;
     flex-direction: column;
@@ -40,9 +31,10 @@ header{
 
 .plan .bloque .label{
     padding:0.8rem;
-    width: 72px;
-    font-size: 3rem;
+    width: 250px;
     text-align: center;
+    color: darkblue;
+    font-size: 2rem;
 }
 
 .plan .bloque .asignaturas {

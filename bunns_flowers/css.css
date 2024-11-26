@@ -49,8 +49,36 @@ header nav ul li.logo img {
 }
 
 header nav ul li {
-    display: flex;
-    align-items: center; 
+    position: relative; 
+}
+
+header nav ul li .submenu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+}
+
+header nav ul li .submenu li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li .submenu li a:hover {
+    background-color: #dab1d4;
+    color: #333;
+}
+
+header nav ul li:hover .submenu {
+    display: block; 
 }
 
 header nav ul li a{
@@ -726,8 +754,36 @@ header3 nav ul li.logo img {
 }
 
 header3 nav ul li {
-    display: flex;
-    align-items: center; 
+    position: relative; 
+}
+
+header3 nav ul li .submenu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+}
+
+header3 nav ul li .submenu li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header3 nav ul li .submenu li a:hover {
+    background-color: #dab1d4;
+    color: #333;
+}
+
+header3 nav ul li:hover .submenu {
+    display: block; 
 }
 
 header3 nav ul li a{
@@ -1173,8 +1229,36 @@ header4 nav ul li.logo img {
 }
 
 header4 nav ul li {
-    display: flex;
-    align-items: center; 
+    position: relative; /* Necesario para el posicionamiento del submenu */
+}
+
+header4 nav ul li .submenu {
+    display: none; /* Oculta el submenu por defecto */
+    position: absolute;
+    top: 100%; /* Posiciona el submenu debajo del elemento principal */
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para resaltar el submenu */
+    z-index: 1000;
+}
+
+header4 nav ul li .submenu li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header4 nav ul li .submenu li a:hover {
+    background-color: #dab1d4;
+    color: #333;
+}
+
+header4 nav ul li:hover .submenu {
+    display: block; /* Muestra el submenu al pasar el cursor */
 }
 
 header4 nav ul li a{
@@ -1320,9 +1404,38 @@ header5 nav ul li.logo img {
 }
 
 header5 nav ul li {
-    display: flex;
-    align-items: center; 
+    position: relative; 
 }
+
+header5 nav ul li .submenu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+}
+
+header5 nav ul li .submenu li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header5 nav ul li .submenu li a:hover {
+    background-color: #dab1d4;
+    color: #333;
+}
+
+header5 nav ul li:hover .submenu {
+    display: block;
+}
+
 
 header5 nav ul li a{
     display: block;

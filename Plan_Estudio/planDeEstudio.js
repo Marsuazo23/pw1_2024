@@ -615,6 +615,30 @@ const demoPlanEstudio = [
             },
         ]
     },
+    {
+        "id": 16,
+        "bloque": "CPG.",
+        "asignaturas": [
+            {
+                "nombre": "COPROGRAMATICA I",
+                "id": "CPG1",
+                "creditos": 0,
+                "orden": 0,
+            },
+            {
+                "nombre": "COPROGRAMATICA II",
+                "id": "CPG2",
+                "creditos": 0,
+                "orden": 0,
+            },
+            {
+                "nombre": "COPROGRAMATICA III",
+                "id": "CPG3",
+                "creditos": 0,
+                "orden": 0,
+            },
+        ]
+    },
 ];
 
 class PlanDeEstudio{

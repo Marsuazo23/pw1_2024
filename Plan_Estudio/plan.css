@@ -27,6 +27,7 @@ header{
     align-items: center;
     border: 1px solid #333;
     padding:0.5rem;
+    background-color: lightblue;
 }
 
 .plan .bloque .label{
@@ -35,6 +36,11 @@ header{
     text-align: center;
     color: darkblue;
     font-size: 2rem;
+    font-weight: bold;
+}
+
+.plan .asignatura{
+    background-color: white;
 }
 
 .plan .bloque .asignaturas {

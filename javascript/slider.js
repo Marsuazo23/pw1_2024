@@ -28,15 +28,20 @@ class SliderController {
     moveNext() {
         // Cuando se llegue al último slide, el primero debe moverse como el siguiente
         if (this.currentSlideIndex === this.slides.length - 1) {
-            this.framestrack.style.transition = "none"; // Desactivar transición para el salto
+            this.framestrack.style.transition = "transform 0.5s ease-in-out"; 
             this.moveSlideTo(0);  // Salta al primer slide inmediatamente
             setTimeout(() => {
-                this.framestrack.style.transition = "transform 0.5s ease-in-out"; // Reactivar transición
-            }, 200);  // Espera un pequeño tiempo para permitir el salto
+                // No se hace transición hacia el segundo slide
+                this.framestrack.style.transition = "none"; // Mantener sin transición
+                this.moveSlideTo(0);  // Mantener el primer slide
+            }, 50);  // Solo espera un pequeño tiempo para evitar parpadeo
         } else {
+            // Si no estamos en el último slide, avanzamos normalmente
             this.moveSlideTo(this.currentSlideIndex + 1);
+            this.framestrack.style.transition = "transform 0.5s ease-in-out"; 
         }
     }
+    
 
     movePrevious() {
         // Cuando se esté en el primer slide, mostrar el último como siguiente

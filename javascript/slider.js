@@ -3,7 +3,6 @@ class SliderController {
     framestrack;
     slides = [];
     currentSlideIndex = 0;
-    slideDirection = 1;
 
     constructor() {
         this.slider = document.querySelector('.slider');
@@ -22,14 +21,34 @@ class SliderController {
         this.currentSlideIndex = (slideIndex + this.slides.length) % this.slides.length;
 
         // Cambiar el desplazamiento con translateX para mover las imágenes
-        this.framestrack.style.transform = `translateX(-${this.currentSlideIndex * 100}vw)`;
+        this.framestrack.style.transform = `translateX(-${this.currentSlideIndex * 100}vw)`; // Comillas invertidas para interpolación de variables
         console.log("Slide cambiado a:", this.currentSlideIndex);
     }
 
     moveNext() {
-        // Mueve al siguiente slide, con la lógica cíclica
-        this.currentSlideIndex = (this.currentSlideIndex + this.slideDirection + this.slides.length) % this.slides.length;
-        this.moveSlideTo(this.currentSlideIndex);
+        // Cuando se llegue al último slide, el primero debe moverse como el siguiente
+        if (this.currentSlideIndex === this.slides.length - 1) {
+            this.framestrack.style.transition = "none"; // Desactivar transición para el salto
+            this.moveSlideTo(0);  // Salta al primer slide inmediatamente
+            setTimeout(() => {
+                this.framestrack.style.transition = "transform 0.5s ease-in-out"; // Reactivar transición
+            }, 200);  // Espera un pequeño tiempo para permitir el salto
+        } else {
+            this.moveSlideTo(this.currentSlideIndex + 1);
+        }
+    }
+
+    movePrevious() {
+        // Cuando se esté en el primer slide, mostrar el último como siguiente
+        if (this.currentSlideIndex === 0) {
+            this.framestrack.style.transition = "none"; // Desactivar transición para el salto
+            this.moveSlideTo(this.slides.length - 1); // Salta al último slide inmediatamente
+            setTimeout(() => {
+                this.framestrack.style.transition = "transform 0.5s ease-in-out"; // Reactivar transición
+            }, 200);  // Espera un pequeño tiempo para permitir el salto
+        } else {
+            this.moveSlideTo(this.currentSlideIndex - 1);
+        }
     }
 
     generateUI() {
@@ -43,14 +62,12 @@ class SliderController {
         // Agregar evento para mover al slide anterior
         btnLeft.addEventListener('click', () => {
             console.log("Flecha Izquierda clickeada");
-            this.slideDirection = -1; // Movimiento hacia atrás
-            this.moveNext();
+            this.movePrevious();
         });
 
         // Agregar evento para mover al siguiente slide
         btnRight.addEventListener('click', () => {
             console.log("Flecha Derecha clickeada");
-            this.slideDirection = 1; // Movimiento hacia adelante
             this.moveNext();
         });
 

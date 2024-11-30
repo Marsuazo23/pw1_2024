@@ -644,6 +644,7 @@ const demoPlanEstudio = [
 class PlanDeEstudio{
     planDeEstudio=[];
     container = null;
+    asignaturas = {};
     constructor( planDeEstudio, containerSelector = "main"){
         if (!planDeEstudio) {
             throw new Error("Plan de Estudio es requerido.");
@@ -656,6 +657,7 @@ class PlanDeEstudio{
         this.container = tmpContainer;
         this.generateUI();
     }
+
     generateUI(){
         this.container.classList.add('plan');
         this.planDeEstudio.forEach( (bloque) => {
@@ -669,7 +671,6 @@ class PlanDeEstudio{
         const bloqueUI = document.createElement("SECTION");
         bloqueUI.classList.add('bloque');
         bloqueUI.setAttribute("id", `blq_${bloque.id}`);
-        
         const bloqueLabel = document.createElement("DIV");
         bloqueLabel.classList.add('label');
         bloqueLabel.innerHTML = bloque.bloque;
@@ -701,70 +702,52 @@ class PlanDeEstudio{
             </strong>
             <br/>
             Créditos: ${asignatura.creditos}`;
-        return asignaturaUI;
-    }
-}
 
-class PlanDeEstudio2{
-    planDeEstudio2=[];
-    container = null;
-    constructor( planDeEstudio2, containerSelector = "main"){
-        if (!planDeEstudio2) {
-            throw new Error("Plan de Estudio es requerido.");
-        }
-        const tmpContainer = document.querySelector(containerSelector);
-        if (!tmpContainer) {
-            throw new Error("El contenedor no se encuentra");
-        }
-        this.planDeEstudio2 = planDeEstudio2;
-        this.container = tmpContainer;
-        this.generateUI();
-    }
-    generateUI(){
-        this.container.classList.add('plan');
-        this.planDeEstudio2.forEach( (bloque) => {
-            this.container.appendChild(
-                this.generateBloque(bloque)
-            );
-        } );
-
-    }
-    generateBloque(bloque){
-        const bloqueUI = document.createElement("SECTION");
-        bloqueUI.classList.add('bloque');
-        bloqueUI.setAttribute("id", `blq_${bloque.id}`);
-        
-        const bloqueLabel = document.createElement("DIV");
-        bloqueLabel.classList.add('label');
-        bloqueLabel.innerHTML = bloque.bloque;
-        bloqueUI.appendChild(bloqueLabel);
-
-        const asignaturas = document.createElement("DIV");
-        asignaturas.classList.add('asignaturas');
-        bloque.asignaturas.forEach(
-            (asignatura)=>{
-                asignaturas.appendChild(this.generateAsignatura(asignatura));
-            }
-        );
-        bloqueUI.appendChild(asignaturas);
-        return bloqueUI;
-    }
-
-    generateAsignatura(asignatura){
-        const asignaturaUI = document.createElement("DIV");
-        asignaturaUI.classList.add('asignatura');
-        asignaturaUI.setAttribute('id', asignatura.id);
+        asignaturaUI.addEventListener('mouseenter', (e)=>{
+            asignaturaUI.classList.add('selected');
+            const requisitos = JSON.parse(asignaturaUI.dataset.requisitos || '[]');
+            const apertura = JSON.parse(asignaturaUI.dataset.apertura || '[]');
+            requisitos.forEach((req)=>{
+                this.asignaturas[req].classList.add("requisito");
+            });
+            apertura.forEach((apt)=>{
+                this.asignaturas[apt].classList.add("apertura");
+            });
+        });
+        asignaturaUI.addEventListener('mouseleave', (e)=>{
+            asignaturaUI.classList.remove('selected');
+            const requisitos = JSON.parse(asignaturaUI.dataset.requisitos || '[]');
+            const apertura = JSON.parse(asignaturaUI.dataset.apertura || '[]');
+            requisitos.forEach((req)=>{
+                this.asignaturas[req].classList.remove("requisito");
+            });
+            apertura.forEach((apt)=>{
+                this.asignaturas[apt].classList.remove("apertura");
+            });
+        });
         if(asignatura.requisitos){
-            asignaturaUI.setAttribute(
-                'data-requisitos',
-                JSON.stringify(asignatura.requisitos)
-            );
+            asignatura.requisitos.forEach((req)=>{
+                if(this.asignaturas[req]){
+                    /*
+                    const apertura = JSON.parse(
+                        this.asignaturas[req].getAttribute ('data-apertura')||'[]'
+                    );
+                    */
+                    const apertura = JSON.parse(
+                        this.asignaturas[req].dataset.apertura || '[]'
+                    );
+                    if( !apertura.includes(asignatura.id)){
+                        apertura.push(asignatura.id);
+                    }
+                    this.asignaturas[req].setAttribute(
+                        'data-apertura',
+                        JSON.stringify(apertura)
+                    );
+                }
+            });
         }
-        asignaturaUI.innerHTML = `<strong>${asignatura.nombre}
-            <br/>(${asignatura.id})
-            </strong>
-            <br/>
-            Créditos: ${asignatura.creditos}`;
+
+        this.asignaturas[asignatura.id] = asignaturaUI;
         return asignaturaUI;
     }
 }

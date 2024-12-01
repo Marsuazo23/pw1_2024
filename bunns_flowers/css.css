@@ -2002,6 +2002,19 @@ body {
         font-size: 0.6rem;
     }
 
+    .cuadrante4 h2{
+        font-weight: normal; 
+    }
+    
+    .cuadrante4 h2 a {
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .cuadrante4 h2 a:hover {
+        text-decoration: underline; 
+    }
+
     .cuadrante5 {
         position: relative; 
         background-color: #8c6e4a;
@@ -2016,18 +2029,71 @@ body {
         font-size: 0.6rem;
     }
 
+    .cuadrante5 h2{
+        font-weight: normal; 
+    }
+    
+    .cuadrante5 h2 a {
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .cuadrante5 h2 a:hover {
+        text-decoration: underline; 
+    }
+
     .cuadrante6 {
         position: relative; 
         background-color: #8c6e4a;
         text-align: center;
-        transform: translateX(400%) translateY(1920%); 
-        height: 40px; 
+        transform: translateX(300%) translateY(1710%); 
+        height: 45px; 
         width: 150px;
         justify-content: center;
         align-items: center;
         white-space: nowrap; 
         display: inline-flex;
         font-size: 0.6rem;
+    }
+
+    .cuadrante6 h2{
+        font-weight: normal; 
+    }
+    
+    .cuadrante6 h2 a {
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .cuadrante6 h2 a:hover {
+        text-decoration: underline; 
+    }
+
+    .cuadrante8 {
+        position: relative; 
+        background-color: #8c6e4a;
+        text-align: center;
+        transform: translateX(400%) translateY(1690%); 
+        height: 45px; 
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap; 
+        display: inline-flex;
+        font-size: 0.6rem;
+    }
+
+    .cuadrante8 h2{
+        font-weight: normal; 
+    }
+    
+    .cuadrante8 h2 a {
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .cuadrante8 h2 a:hover {
+        text-decoration: underline; 
     }
 
     .linea-divisoria {
@@ -2364,6 +2430,7 @@ body {
         color: black; 
         line-height: 2.5;
         font-weight: bold;
+        text-decoration: underline;
     }
 
     .panel-texto13 p {
@@ -2547,13 +2614,65 @@ body {
         font-weight: bold;
     }
 
+    .panel-texto32 h2 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-100%) translateY(2870%); 
+        font-size: 1.8rem; 
+        line-height: 1.2;
+        font-weight: none;
+    }
+
+    .cuadrante7 {
+        position: relative; 
+        background-color: #88a795;
+        text-align: center;
+        transform: translateX(-1250%) translateY(8070%); 
+        height: 40px; 
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .cuadrante4 {
+        position: relative; 
+        background-color: #8c6e4a;
+        text-align: center;
+        transform: translateX(400%) translateY(480%); 
+        height: 40px; 
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap; 
+        display: inline-flex;
+        font-size: 0.6rem;
+    }
+    
+    .cuadrante7 h2{
+        font-weight: normal; 
+    }
+    
+    .cuadrante7 h2 a {
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .cuadrante7 h2 a:hover {
+        text-decoration: underline; 
+    }
+
     footer3 {
         display: flex;
         align-items: center;
         justify-content: space-between; 
         background-color: #88A795;
         padding: 3.5px;
-        margin-top: 180rem;
+        margin-top: 190rem;
     }
 
     footer3 p {
@@ -3003,14 +3122,14 @@ body {
         height: 4rem; 
     }
 
-footer5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: #88A795;
-    padding: 3.5px;
-    margin-top: 120rem;
-}
+    footer5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        background-color: #88A795;
+        padding: 3.5px;
+        margin-top: 120rem;
+    }
 
     footer5 p {
         margin: 0;
@@ -3059,5 +3178,32 @@ footer5 {
 
     footer5 nav ul li a:hover {
         text-decoration: underline;
+    }
+
+    .panel-texto33{
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-45%) translateY(-130%); 
+        font-size: 2rem; 
+        color: black; 
+        text-align: center; 
+        font-weight: normal;
+    }
+
+    .panel-texto33 h2{
+        font-weight: normal;
+    }
+
+    .panel-texto34 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-50%) translateY(-40%); 
+        font-size: 1.4rem; 
+        color: black; 
+        text-align: center; 
+        width: 50rem;
+        line-height: 2.5;
     }
 }

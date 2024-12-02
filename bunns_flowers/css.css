@@ -3206,4 +3206,118 @@ body {
         width: 50rem;
         line-height: 2.5;
     }
+
+    .panel-promos-container {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: flex-start; 
+        margin-top: 350px; 
+    }
+    
+    .panel-promos1,
+    .panel-promos2 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 70px; 
+    }
+    
+    .card11,
+    .card12 {
+        text-align: center;
+        width: 300px; 
+    }
+    
+    .card11 img,
+    .card12 img {
+        width: 250px; 
+        height: 250px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        margin-bottom: 10px; 
+    }
+    
+    .card11 h3,
+    .card12 h3 {
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+
+    .linea-divisoria7 {
+        width: 5px; 
+        height: 159%; 
+        background-color: #e2cba7; 
+        position: absolute; 
+        margin-top: 25px;
+    }
+    
+    .panel-texto35 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-50%) translateY(820%); 
+        font-size: 1.4rem; 
+        color: black; 
+        text-align: center; 
+        width: 50rem;
+        line-height: 2.5;
+    }
+
+    footer6 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        background-color: #88A795;
+        padding: 3.5px;
+        margin-top: 20rem;
+    }
+
+    footer6 p {
+        margin: 0;
+        font-size: 1.2rem;
+        text-align: center;
+        color: black;
+        flex: 1; 
+    }
+
+    .panel-logosredes6 {
+        display: flex;
+        justify-content: center;
+        flex: 1; 
+        margin-left: 3rem;
+    }
+
+    .panel-logosredes6 img {
+        width: 4rem;
+        margin: 37px;
+    }
+
+    footer6 nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; 
+    }
+
+    footer6 nav ul {
+        display: flex;
+        flex-direction: column; 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: flex-end; 
+        margin-right: 8rem;
+    }
+
+    footer6 nav ul li {
+        margin: 0.5rem 0; 
+    }
+
+    footer6 nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    footer6 nav ul li a:hover {
+        text-decoration: underline;
+    }
 }

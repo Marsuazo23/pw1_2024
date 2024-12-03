@@ -3255,4 +3255,79 @@ body {
     footer7 nav ul li a:hover {
         text-decoration: underline;
     }
+
+
+    /*EVENTOS*/
+    .panel-texto36 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-45%) translateY(-92%); 
+        font-size: 2rem; 
+        color: black; 
+        text-align: center; 
+        font-weight: normal;
+    }
+
+    .panel-texto36 h2{
+        font-weight: normal;
+    }
+
+    .panel-texto37 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-50%) translateY(-7%); 
+        font-size: 1.4rem; 
+        color: black; 
+        text-align: center; 
+        width: 50rem;
+        line-height: 2.5;
+    }
+
+    .panel-texto38 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-170%) translateY(250%); 
+        font-size: 1.5rem; 
+        color: black; 
+        text-align: center; 
+        font-weight: normal;
+    }
+
+    .panel-texto38 h2{
+        font-weight: normal;
+    }
+
+    .panel-texto39 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translateX(-50%) translateY(160%); 
+        font-size: 1.4rem; 
+        color: black; 
+        text-align: left; 
+        width: 50rem;
+        line-height: 2.5;
+    }
+
+    .card14 {
+        position: absolute;
+        top: 50%; 
+        right: 0; 
+        transform: translateX(-28%) translateY(100%);
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .card14 img {
+        width: 100%; 
+        height: 300px; 
+        object-position: center center;
+        background-color: #ceb5d9;
+        border-radius: 20px;
+        border: 1px solid black;
+
+    }
 }
